@@ -1,0 +1,126 @@
+python-cinderclient (1:1.0.6-0ubuntu1~cloud0) precise-havana; urgency=low
+
+  * New upstream release for the Ubuntu Cloud Archive.
+
+ -- Adam Gandelman <adamg@ubuntu.com>  Thu, 10 Oct 2013 18:54:19 -0700
+
+python-cinderclient (1:1.0.6-0ubuntu1) saucy; urgency=low
+
+  [ James Page ]
+  * d/p/*: Dropped - no longer required. 
+
+  [ Chuck Short ]
+  * New upstream release. (LP: #1236901)
+  * debian/control:
+    - Added versioned dependencies for python-simplejson, python-requests
+      python-fixtures, python-pbr, python-prettytable, python-testtools,
+      and testrepository,
+    - Added dependencies on python-six and python-babel.
+    - Dropped python-setuptools-git, python-httplib2, python-unittest2,
+      and python-d2to1.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Tue, 08 Oct 2013 11:12:46 -0400
+
+python-cinderclient (1:1.0.5-0ubuntu2) saucy; urgency=low
+
+  * Add missing depends on python-pkg-resources
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 07 Sep 2013 00:55:25 -0400
+
+python-cinderclient (1:1.0.5-0ubuntu1) saucy; urgency=low
+
+  [ Andres Rodriguez ]
+  * debian/control: Build-Depends python-pbr and python-d2to1.
+
+  [ Chuck Short ]
+  * New upstream release.
+  * debian/patches/fix-requirements.patch: Fix requests dependency.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Tue, 13 Aug 2013 10:52:31 -0400
+
+python-cinderclient (1:1.0.4-0ubuntu1) saucy; urgency=low
+
+  [ Yolanda Robla ]
+  * debian/tests: added autopkg tests
+
+  [ James Page ]
+  * New upstream release:
+    - Fixes problem with --debug option (LP: #1130730). 
+  * d/control: Update VCS fields for new branch locations.
+  * d/install: Enable bash completion for cinder command. 
+  * d/control: Drop pep8 from BD's.
+  * d/control: Bumped Standards-Version to 3.9.4:
+    - d/copyright: Switch to released version of DEP-5.
+
+ -- James Page <james.page@ubuntu.com>  Thu, 18 Jul 2013 14:45:01 +0100
+
+python-cinderclient (1:1.0.3-0ubuntu1) raring; urgency=low
+
+  * New upstream release. 
+
+ -- Chuck Short <zulcss@ubuntu.com>  Tue, 02 Apr 2013 09:20:51 -0500
+
+python-cinderclient (1:1.0.2.20.g20dcc85-0ubuntu1) raring; urgency=low
+
+  * New upstream release.
+  * debian/control: Drop python-nose in favor of testrepository.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Thu, 14 Feb 2013 20:58:32 -0600
+
+python-cinderclient (1:1.0.2.3.g61e2a42-0ubuntu1) raring; urgency=low
+
+  [ Adam Gandelman ]
+  * New upstream release.
+
+  [ Chuck Short ]
+  * New upstream release.
+  * debian/control: Add python-requests as a build dep
+  * debian/control: Add python-testtools and python-fixtures as a build dep.
+
+  [ Yolanda Robla ]
+  * debian/control: add python-setuptools-git dependency
+  * debian/copyright: Removed remaining dh boilerplate template.
+
+ -- Adam Gandelman <adamg@ubuntu.com>  Thu, 10 Jan 2013 11:35:58 -0800
+
+python-cinderclient (1:1.0.0-0ubuntu1) quantal; urgency=low
+
+  [ Chuck Short ]
+  * New upstream release.
+  * debian/patches/fix-pep8-errors.patch: Dropped dont run 
+    pep8 tests. 
+  
+  [ Adam Gandelman ]
+  * debian/control: Drop 'Provides: ${python:Provides}'.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Mon, 01 Oct 2012 12:05:26 -0500
+
+python-cinderclient (1:0.2.12-0ubuntu1) quantal; urgency=low
+
+  [ Soren Hansen ]
+  * Update debian/watch to account for symbolically named tarballs and
+    use newer URL.
+  * Fix Launchpad URLs in debian/watch.
+
+  [ Chuck Short ]
+  * New upstream version.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Fri, 07 Sep 2012 11:35:32 -0500
+
+python-cinderclient (1:0.2-0ubuntu1) quantal; urgency=low
+
+  * New upstream version.
+  * debian/watch: Update.
+  * debian/control: clean up run time deps and build deps.
+  * debian/control: Add python-provides
+
+  [ Adam Gandelman ]
+  * debian/control: Set Provides: ${python:Provides}.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Thu, 16 Aug 2012 12:03:50 -0500
+
+python-cinderclient (2012.2~f1~20120621.8-0ubuntu1) quantal; urgency=low
+
+  * Initial release.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Wed, 27 Jun 2012 13:32:14 -0400

@@ -1,0 +1,40 @@
+Source: python-cinderclient
+Section: python
+Priority: optional
+Maintainer: Chuck Short <zulcss@ubuntu.com>
+Build-Depends:
+ debhelper (>= 8.0.0),
+ python-all (>= 2.6),
+ python-babel,
+ python-fixtures (>= 0.3.12),
+ python-mock,
+ python-pbr (>= 0.5.21),
+ python-prettytable (>= 0.6),
+ python-requests (>= 1.1),
+ python-setuptools,
+ python-six,
+ python-simplejson (>= 2.0.9),
+ python-sphinx,
+ python-testtools (>= 0.9.32),
+ testrepository (>= 0.0.17),
+Standards-Version: 3.9.4
+X-Python-Version: >= 2.5
+Vcs-Browser: http://bazaar.launchpad.net/~ubuntu-server-dev/python-cinderclient/havana/files
+Vcs-Bzr: https://code.launchpad.net/~ubuntu-server-dev/python-cinderclient/havana
+XS-Testsuite: autopkgtest
+
+Package: python-cinderclient
+Architecture: all
+Depends:
+ python-prettytable (>= 0.6),
+ python-requests (>= 1.1),
+ python-simplejson (>= 2.0.9),
+ python-babel,
+ python-six,
+ python-pkg-resources,
+ ${misc:Depends},
+ ${python:Depends}
+Description: python bindings to the OpenStack Volume API
+ This is a client for the OpenStack Volume API. There's a Python API (the
+ ``cinderclient`` module), and a command-line script (``cinder``). Each
+ implements 100% of the OpenStack Volume API.
